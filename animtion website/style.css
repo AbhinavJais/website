@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: red; */
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url(taj.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0px 38%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+nav{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;  
+    background-color: rgba(0, 0, 0,0.2); 
+    
+}
+nav .logo{
+    text-align: center;
+    width: 25%;
+}
+.menu{
+    width: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+.temp{
+    width: 10%;
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease-in;
+} 
+.temp:hover{
+    color: #00b894;
+
+}    
+.temp:first-of-type{
+    color: #00b894;
+}
+.temp:first-of-type:hover{
+    color: whitesmoke;
+}
+main{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+section h3{
+    font-size: 35px;
+    font-weight: 200;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px black ;
+}
+section h1{
+    margin: 20px 0 10px 0;
+    font-size: 55px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+}
+section p{
+    font-weight: 300;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px black;
+    margin-bottom: 30px;
+}
+section a{
+    padding: 10px 35px;
+    text-decoration: none;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in;
+}
+section .btone{
+    background-color: whitesmoke;
+    color: black;
+}
+.btone:hover{
+    background-color: #00b894;
+    color: white;
+}
+section .bttwo{
+    background-color: #00b894;
+    color: white;
+}
+.bttwo:hover{
+    background-color: whitesmoke;
+    color: black;
+}
+.change_content::after{
+    content: "";
+    animation: changetext 10s infinite linear;
+    color: #00b894;
+
+} 
+@keyframes changetext{
+    0%{ content: "Darjeeling";}
+    15%{ content: "Agra";}
+    30%{ content: "Mumbai";}
+    45%{ content: "Kerala";}
+    60%{ content: "Odisa";}
+    75%{ content: "Jaipur";}
+    90%{ content: "Delhi";}
+    100%{ content: "Goa";}
+}
